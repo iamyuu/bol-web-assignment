@@ -1,0 +1,16 @@
+{
+	"name": "bol-web-assignment",
+	"private": true,
+	"version": "0.0.0",
+	"source": "src/index.html",
+	"scripts": {
+		"dev": "parcel",
+		"build": "parcel build"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "2.6.0",
+		"@popperjs/core": "2.11.5",
+		"bootstrap": "5.2.0-beta1",
+		"parcel": "2.6.0"
+	}
+}
