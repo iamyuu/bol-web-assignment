@@ -1,28 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-		<link rel="shortcut icon" type="image/x-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico" />
-		<link rel="apple-touch-icon" type="image/x-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico" />
-
-		<title>Bootstrap Parcel</title>
-
-		<link rel="stylesheet" href="./scss/styles.scss" />
+		<title>Muhammad Yusuf</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
-		<div class="px-4 py-5 my-5 text-center">
-			<img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="bootstrap logo" width="72" height="57" />
-			<h1 class="display-5 fw-bold">Bootstrap</h1>
-			<div class="col-lg-6 mx-auto">
-				<p class="lead mb-4">
-					Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with
-					powerful JavaScript plugins.
-				</p>
-			</div>
-		</div>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+			<div class="container">
+				<h1>
+					<a class="navbar-brand" href="#">Muhammad Yusuf</a>
+				</h1>
 
-		<script type="module" src="./js/index.js"></script>
+				<button
+					class="navbar-toggler collapsed"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse"
+					aria-controls="navbarCollapse"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="navbar-collapse collapse justify-content-end" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#pendidikan">Pendidikan</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#jadwal-kuliah">Jadwal Kuliah</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#aktivitas">Aktivitas</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main class="container vstack gap-4">
+			<section id="home">
+				<span class="h2 d-block mb-4">Halo yang disana</span>
+
+				<p>Saya seorang insinyur perangkat lunak yang lahir, besar, dan saat ini tinggal di Bogor, Indonesia. Saat ini saya sedang mempelajari sistem informasi di Binus.</p>
+				<p>
+					Saya orang yang ingin tahu dan saya suka mempelajari cara kerja berbagai hal dan memiliki hasrat yang kuat untuk mempelajari hal-hal baru yang berkaitan dengan perangkat
+					lunak.
+				</p>
+			</section>
+
+			<section id="pendidikan">
+				<h2 class="mb-4">Pendidikan</h2>
+
+				<dl>
+					<dt>BINUS University</dt>
+					<dd>Information Systems</dd>
+
+					<dt>SMK Wikrama Bogor</dt>
+					<dd>Software Engineering</dd>
+				</dl>
+			</section>
+
+			<section id="jadwal-kuliah">
+				<h2 class="mb-4">Jadwal Kuliah</h2>
+
+				<table class="table table-hover table-responsive">
+					<thead>
+						<tr>
+							<th scope="col">VC</th>
+							<th scope="col">Web Application</th>
+							<th scope="col">Cloud Computing</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>18 Juni 2022 (11:20 - 13:00)</td>
+							<td>13 Juni 2022 (19:20 - 21:00)</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>27 Juni 2022 (19:20 - 21:00)</td>
+							<td>02 Juli 2022 (11:20 - 13:00)</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="aktivitas">
+				<h2 class="mb-4">Aktivitas</h2>
+
+				<dl>
+					<dt>ReactJS Indonesia</dt>
+					<dd>Penyelenggara Online Meetup (juga dikenal sebagai Webinar) dan Admin Group Telegram.</dd>
+
+					<dt>Svelte Indonesia</dt>
+					<dd>Penyelenggara Meetup dan Admin Group Telegram</dd>
+
+					<dt>KawalCOVID-19</dt>
+					<dd>Berkontribusi membuat website yang di naungi oleh KawalCOVID</dd>
+				</dl>
+			</section>
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
